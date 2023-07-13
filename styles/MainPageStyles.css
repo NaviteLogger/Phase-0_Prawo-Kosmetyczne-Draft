@@ -1,3 +1,4 @@
+/* CSS styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -64,3 +65,17 @@ body {
   .button:hover {
     background-color: #005500;
   }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .navigation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .navigation a {
+      margin: 10px;
+    }
+  }
+  

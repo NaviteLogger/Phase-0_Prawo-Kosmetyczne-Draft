@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #222222;
   }
   
@@ -91,5 +91,21 @@ body {
   
   .agreements-table tbody tr:nth-child(odd) {
     background-color: #f9f9f9;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .offer-container {
+      min-height: auto;
+    }
+    
+    .subscription-box {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .agreements-table {
+      max-width: 100%;
+    }
   }
   
