@@ -1,3 +1,4 @@
+/* CSS styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 100vh;
     background-color: #222222;
   }
@@ -59,3 +61,35 @@ body {
   .subscription-box a:hover {
     background-color: #005500;
   }
+  
+  .agreements-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  .agreements-table thead {
+    background-color: #008000;
+    color: #ffffff;
+  }
+  
+  .agreements-table th,
+  .agreements-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .agreements-table th {
+    font-weight: bold;
+  }
+  
+  .agreements-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .agreements-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
