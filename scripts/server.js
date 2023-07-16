@@ -5,11 +5,6 @@ const app = express();
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, '../')));
 
-// Serve a specific file as the default file for the root URL
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../pages/MainPage.html'));
-});
-
 const port = 5000; // Choose any port you prefer
 
 app.listen(port, () => {
