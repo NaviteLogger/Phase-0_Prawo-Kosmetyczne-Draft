@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Serve MainPage.html as the default file for the root URL
 app.get('/', (req, res) => {
     console.log('MainPage.html requested');
-    res.sendFile(path.join(__dirname, 'public', 'MainPage.html'));
+    res.sendFile(path.join(__dirname, 'public', 'pages', 'MainPage.html'));
 });
 
 const port = 5000; // Choose any port you prefer
