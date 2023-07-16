@@ -8,11 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.logo:hover {
-  background-color: #ddd;
+  background-color: #14054B;
 }
 
 .header {
@@ -20,13 +16,17 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navigation .current {
+  font-weight: bold;
 }
 
 .nav-button {
@@ -36,7 +36,7 @@ body {
   background-color: white;
   color: black;
   transition: background-color 0.3s ease;
-  width: 100px; /* Adjust this value as needed */
+  width: 165px; /* Adjust this value as needed */
   text-align: center;
 }
 
@@ -64,6 +64,7 @@ body {
   background-color: white;
   color: black;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .arrow:hover {
@@ -71,7 +72,7 @@ body {
 }
 
 .ad-image {
-  display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 300px;
