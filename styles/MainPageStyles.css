@@ -1,85 +1,80 @@
-/* CSS styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+}
 
-  .zdjecie {
-    width: 100px;
-  }
-  
-  .header h1 {
-    margin: 0;
-    color: #008000;
-  }
-  
-  .navigation {
-    background-color: #008000;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .navigation a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  .ads {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .ads img {
-    width: 100%;
-    height: 80%;
-  }
-  
-  .footer {
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .button {
-    background-color: #008000;
-    color: #ffffff;
-    padding: 12px 24px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #005500;
-  }
-  
-  /* Responsive adjustments */
-  @media screen and (max-width: 768px) {
-    .navigation {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .navigation a {
-      margin: 10px;
-    }
-  }
-  
+.logo {
+  height: 50px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.logo:hover {
+  background-color: #ddd;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+  width: 100px; /* Adjust this value as needed */
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.shopping-bag {
+  width: 50px;
+  height: 50px;
+}
+
+.ads {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.arrow {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #ddd;
+}
+
+.ad-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #f0f0f0;
+  margin: 0 10px;
+}
