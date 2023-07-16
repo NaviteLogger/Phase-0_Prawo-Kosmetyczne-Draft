@@ -7,6 +7,7 @@ app.use(express.static(path.join(__dirname, '../')));
 
 // Serve MainPage.html as the default file for the root URL
 app.get('/', (req, res) => {
+    console.log('MainPage.html requested'); // Add this log message
     res.sendFile(path.join(__dirname, '../pages/MainPage.html'));
 });
 
